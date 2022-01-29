@@ -95,21 +95,11 @@ body{
     .board{
         width: 98vw;
         height: auto;
+        box-shadow: none;
     }
     body{
         background-color: #fff;
         padding-top: 9px;
-    }
-    .bubble-recv, .bubble-sent{
-        width: 180px;
-        padding-left: 6px;
-    }
-    .panel-body{
-        min-height: 65vh;
-        max-height: 65vh;
-    }
-    .et-bar .first{
-        width: 235px!important;
     }
     .board-container{
         width: 100%;
