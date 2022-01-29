@@ -1,0 +1,152 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 16px;
+    background-color: #ccc;
+}
+.board, .board-column {
+    min-height: 92vh;
+    max-height: 92vh;
+    display: flex;
+    background-color: #fff;/*linear-gradient(90deg, #c99, #aaa 25%, #9aa, #ccc);*/
+    
+}
+.board{
+    flex-direction: row;
+}
+.board-column{
+    flex-direction: column;
+}
+.board-container, .identity{
+    overflow-y: auto;
+    scrollbar-color: #444;
+    scrollbar-width: thin;
+    overscroll-behavior: smooth;
+    width: 100%;
+    margin: 0px auto;
+    padding: 4px 4px;
+}
+.board-container{
+    flex-grow: 1;
+}
+.identity{
+    flex-grow: 1;
+    height: 40%;
+}
+.identity-lay{
+    width: 30%;
+}
+
+.left-round{
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.right-round{
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.title {
+    font-size: 16px;
+    color: #333;
+    user-select: none;
+}
+.sub-title, .title{
+    font-family: var(--font-family);
+}
+.sub-title {
+    font-size: 15px;
+    color: var(--subtitle-color);
+    user-select: none;
+}
+.flex-space-between {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.bottom-shadow {
+    box-shadow: 0px 10px 3px -10px rgba(17, 17, 17, 0.37);
+}
+.item, .bar-item{
+    display: inline-block;
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 9px;
+}
+.bar-item{
+    background-color: skyblue;
+    margin-bottom: 3px;
+}
+.bar-item .title{
+    color: #333;
+}
+.img-size{
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+}
+.img-container{
+    width: 30%;
+    padding-left: 16x!important;
+    background-color: #11d116;
+}
+@media screen and (max-width: 768px) {
+    .board{
+        width: 98vw;
+        height: auto;
+    }
+    body{
+        background-color: #fff;
+        padding-top: 9px;
+    }
+    .bubble-recv, .bubble-sent{
+        width: 180px;
+        padding-left: 6px;
+    }
+    .panel-body{
+        min-height: 65vh;
+        max-height: 65vh;
+    }
+    .et-bar .first{
+        width: 235px!important;
+    }
+    .board-container{
+        width: 100%;
+        padding: 0px 1px;
+    }
+    .board{
+        display: block;
+        padding: 1px 4px;
+        min-height: 100vh;
+    }
+    .board-column, .board-row{
+        display: block;
+        height: min-content;
+    }
+    .identity-lay{
+        width: 100%;
+    }
+    .identity-lay img{
+        height: auto;
+        width: 40%;
+        left: 30%;
+        border: 2px solid #11d116;
+
+    }
+
+}
+@media screen and (max-width: 1220px) {
+    .board, body{
+        width: 98vw;
+        height: auto;
+    }
+    body{
+        padding: 0!important;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .board{
+        width: 1200px;
+    }
+}
