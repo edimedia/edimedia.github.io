@@ -96,6 +96,7 @@ body{
         width: 98vw;
         height: auto;
         box-shadow: none;
+        padding-bottom: 20px
     }
     body{
         background-color: #fff;
@@ -113,6 +114,9 @@ body{
     .board-column, .board-row{
         display: block;
         height: min-content;
+    }
+    .indentity{
+        max-height: max-content;
     }
     .identity-lay{
         width: 100%;
