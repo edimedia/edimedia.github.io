@@ -96,11 +96,11 @@ body{
         width: 98vw;
         height: auto;
         box-shadow: none;
-        padding-bottom: 20px
+        padding-bottom: 20px!important;
     }
     body{
         background-color: #fff;
-        padding-top: 9px;
+        padding-top: 9px!important;
     }
     .board-container{
         width: 100%;
